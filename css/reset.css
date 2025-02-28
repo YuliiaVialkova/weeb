@@ -15,3 +15,10 @@ ul {
 img {
   vertical-align: top;
 }
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
