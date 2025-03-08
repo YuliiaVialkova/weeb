@@ -1,3 +1,31 @@
+/*---container---*/
+[class*="__container"] {
+  max-width: 1312px;
+  padding: 80px 16px;
+  margin: 0 auto;
+  gap: 80px;
+}
+
+@media (max-width: 991.98px) {
+  [class*="__container"] {
+    padding: 70px 16px;
+    gap: 70px;
+  }
+}
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    padding: 60px 16px;
+    gap: 60px;
+  }
+}
+@media (max-width: 439.98px) {
+  [class*="__container"] {
+    padding: 48px 16px;
+    gap: 48px;
+  }
+}
+
+/*---button---*/
 .button {
   font-size: 20px;
   font-weight: 500;
@@ -29,25 +57,42 @@
 .button--transparent:hover {
   background-color: #2c3c63;
 }
-/*---title---*/
+/*---bigger and smaller title---*/
 .title {
-  font-size: 72px;
   line-height: 1.1;
   font-weight: 800;
   text-wrap: balance;
 }
+.title--bigger {
+  font-size: 72px;
+}
+.title--smaller {
+  font-size: 56px;
+}
 @media (max-width: 991.98px) {
-  .title {
+  .title--bigger {
     font-size: 64px;
+  }
+  .title--smaller {
+    font-size: 56px;
   }
 }
 @media (max-width: 767.98px) {
-  .title {
+  .title--bigger {
     font-size: 58px;
+  }
+  .title--smaller {
+    font-size: 48px;
   }
 }
 @media (max-width: 439.98px) {
   .title {
+    font-weight: 700;
+  }
+  .title--bigger {
     font-size: 56px;
+  }
+  .title--smaller {
+    font-size: 40px;
   }
 }
